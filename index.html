@@ -24,7 +24,7 @@
             </span>
         </div>
         <div class="form">
-            <form action="post">
+            <form action="post" id="signup">
                 <div class="row">
                     <div class="col">
                         <label for="first_name">FIRST NAME</label>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="col">
                         <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" placeholder="Tan">
+                        <input type="text" id="last_name" placeholder="Tan">
                     </div>
                 </div>
                 <div class="row">
@@ -42,7 +42,7 @@
                     </div>
                     <div class="col">
                         <label for="phonenum">PHONE NUMBER</label>
-                    <input type="tel" id="phonenum">
+                        <input type="tel" id="phonenum" min="8" max="8">
                     </div>
                 </div>
                 <div class="row">
@@ -58,7 +58,8 @@
             </form>
         </div>
         <div class="form-buttons">
-
+            <button type="submit" form="signup" class="submitbtn">Create Account</button>
+            <div class="btntext">Already have an account? <span class="login_text">Log in</span></div>
         </div>
     </div>
 </body>
