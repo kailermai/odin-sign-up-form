@@ -50,10 +50,13 @@
   }
 
 /* CSS Styles */
-body {
+html {
+    height: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
     display: flex;
-    height: 100vh;
+    min-height: 100%;
 }
 
 a {
@@ -108,7 +111,7 @@ a {
 }
 
 .form-container {
-    flex-grow: 3;
+    flex-grow: 2;
     height: autp;
     background-color: white;
     display: flex;
@@ -130,7 +133,23 @@ a {
 }
 
 .form {
-    flex-grow: 2;
+    flex-grow: 1;
+    max-height: 250px;
+}
+
+.row {
+    display: flex;
+    margin-top: 3%;
+    label {
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
 }
 
 .form-buttons {
